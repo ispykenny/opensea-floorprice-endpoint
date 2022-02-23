@@ -1,0 +1,17 @@
+{
+  "name": "floorPrice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "chalk": "4.0.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.15"
+  }
+}
