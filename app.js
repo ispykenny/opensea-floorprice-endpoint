@@ -1,8 +1,6 @@
 const express = require('express');
 const PORT = process.env.PORT || 3333
 const app = express();
-const axios   = require('axios')
-const cheerio = require('cheerio')
 const { getCollections } = require('./helpers/getCollections')
 const { getFloors } = require('./helpers/getFloors')
 
@@ -18,4 +16,4 @@ app.get('/:username', (request, response) => {
   displayAllData(username, response);
 })
 
-app.listen(PORT, () => console.log('listening...'))
+app.listen(PORT, () => console.log(`listening on ${PORT}`))
