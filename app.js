@@ -3,7 +3,12 @@ const PORT = process.env.PORT || 3333
 const app = express();
 const { getCollections } = require('./helpers/getCollections')
 const { getFloors } = require('./helpers/getFloors')
+const cors = require('cors');
+app.use(cors({origin: '*'}));
 
+app.get("/favicon.ico", (req, res) => {
+  res.sendStatus(404);
+});
 
 const displayAllData = async (username, response) => {
   const collections = await getCollections(username);
